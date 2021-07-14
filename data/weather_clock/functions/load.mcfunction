@@ -1,1 +1,2 @@
 function weather_clock:display_frame
+function weather_clock:tick
