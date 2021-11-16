@@ -1,0 +1,8 @@
+tellraw @s ["","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n"]
+tellraw @s {"text":"                                                                                ","color":"dark_gray","strikethrough":true}
+tellraw @s {"text":"Weather Clock | Personal Settings","bold":true}
+tellraw @s {"text":"                                                                                ","color":"dark_gray","strikethrough":true}
+execute if entity @s[tag=!weather_clock_config_hotbar_off] run tellraw @s ["",{"text":"[ ✔ ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger WeatherClock set 2 "},"hoverEvent":{"action":"show_text","contents":["Click to toggle"]}},"Show Weather if clock ins selected in hotbar."]
+execute if entity @s[tag=weather_clock_config_hotbar_off] run tellraw @s ["",{"text":"[ ❌ ] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger WeatherClock set 3"},"hoverEvent":{"action":"show_text","contents":["Click to toggle"]}},"Show Weather if clock ins selected in hotbar."]
+execute if entity @s[tag=!weather_clock_config_frames_off] run tellraw @s ["",{"text":"[ ✔ ] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger WeatherClock set 4"},"hoverEvent":{"action":"show_text","contents":["Click to toggle"]}},"Show Weather if looking at itemframe with clock."]
+execute if entity @s[tag=weather_clock_config_frames_off] run tellraw @s ["",{"text":"[ ❌ ] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger WeatherClock set 5"},"hoverEvent":{"action":"show_text","contents":["Click to toggle"]}},"Show Weather if looking at itemframe with clock."]

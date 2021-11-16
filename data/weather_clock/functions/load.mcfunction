@@ -1,2 +1,3 @@
+scoreboard objectives add WeatherClock trigger
 function weather_clock:display_frame
 function weather_clock:tick
