@@ -1,2 +1,0 @@
-tag @a[nbt=!{SelectedItem: {id: "minecraft:clock"}},tag=weather_clock_shown] remove weather_clock_shown
-execute if entity @a[tag=weather_clock_shown] run schedule function weather_clock:display_player/display_player_reset 1t
