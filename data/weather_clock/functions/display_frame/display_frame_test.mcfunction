@@ -1,0 +1,3 @@
+execute at @a[tag=weather_clock_config_frames_off] as @e[distance=..10,type=#weather_clock:item_frames,nbt={Item: {id: "minecraft:clock", Count: 1b}}] run data remove entity @s Item.tag
+execute at @a[tag=!weather_clock_config_frames_off] as @e[distance=..10,type=#weather_clock:item_frames,nbt={Item: {id: "minecraft:clock", Count: 1b}}] run function weather_clock:display_frame/display_frame
+schedule function weather_clock:display_frame/display_frame_test 5s
