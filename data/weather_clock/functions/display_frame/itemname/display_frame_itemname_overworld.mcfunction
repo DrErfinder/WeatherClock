@@ -1,5 +1,3 @@
-data merge entity @s[predicate=weather_clock:in_nether] {Item: {tag: {display: {Name: '{"text":"Firehell","color":"red","obfuscated": true}', Lore: ['{"text":"weather_clock_active"}']}}}}
-data merge entity @s[predicate=weather_clock:in_end] {Item: {tag: {display: {Name: '{"text":"Voiddust","color":"blue","obfuscated": true}', Lore: ['{"text":"weather_clock_active"}']}}}}
 execute if predicate weather_clock:clear run data merge entity @s {Item: {tag: {display: {Name: '{"text":"Clear","color":"gold"}', Lore: ['{"text":"weather_clock_active"}']}}}}
 execute if predicate weather_clock:raining run data merge entity @s {Item: {tag: {display: {Name: '{"text":"Rain","color":"blue"}', Lore: ['{"text":"weather_clock_active"}']}}}}
 execute if predicate weather_clock:thunder run data merge entity @s {Item: {tag: {display: {Name: '{"text":"Thunder","color":"white"}', Lore: ['{"text":"weather_clock_active"}']}}}}
