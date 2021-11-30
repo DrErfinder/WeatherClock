@@ -1,0 +1,3 @@
+execute as @a[nbt={SelectedItem: {id: "minecraft:clock"}},tag=!weather_clock_shown,tag=!weather_clock_config_hotbar_off] run function weather_clock:display_player/display_player
+tag @a[tag=weather_clock_shown,nbt=!{SelectedItem: {id: "minecraft:clock"}}] remove weather_clock_shown
+execute unless score ItemOff WeatherClockGC matches 1 run schedule function weather_clock:display_player/display_player_tick 1t

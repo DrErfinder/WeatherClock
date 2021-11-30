@@ -1,0 +1,3 @@
+execute unless score ItemnameOff WeatherClockGC matches 1 at @a[tag=!weather_clock_config_frames_itemname_off] as @e[distance=..10,type=#weather_clock:item_frames,nbt={Item: {id: "minecraft:clock", Count: 1b}}] run function weather_clock:display_frame/itemname/display_frame_itemname
+execute unless score ArmorstandOff WeatherClockGC matches 1 at @a[tag=weather_clock_config_frames_armorstand] as @e[distance=..30,type=#weather_clock:item_frames,nbt={Item: {id: "minecraft:clock", Count: 1b}}] run function weather_clock:display_frame/armorstand/display_frame_armorstand
+execute unless score FrameOff WeatherClockGC matches 1 run schedule function weather_clock:display_frame/display_frame_add 5s
