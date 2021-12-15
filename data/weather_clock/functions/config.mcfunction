@@ -6,7 +6,7 @@ execute if score ItemnameOff WeatherClockGC matches 1 if score ArmorstandOff Wea
 execute unless score ItemOff WeatherClockGC matches 1 run function weather_clock:display_player/display_player_tick
 execute unless score FrameOff WeatherClockGC matches 1 run function weather_clock:display_frame/display_frame_add
 
-tellraw @s ["","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n","\n"]
+tellraw @s ["","\n","\n","\n","\n"]
 tellraw @s {"text":"                                                                                ","color":"dark_gray","strikethrough":true}
 tellraw @s {"text":"Weather Clock | Global Settings","bold":true}
 tellraw @s {"text":"                                                                                ","color":"dark_gray","strikethrough":true}
